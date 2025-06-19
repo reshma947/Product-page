@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .center-div {
+            display: grid;
+            color: white;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid nav-bg">
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-lg-5 ps-lg-5" href="#">
+                    <img src="./images/logo-white.png" class="img-fluid" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-lg-5 ps-lg-5">
+                        <li class="nav-item ps-lg-5">
+                            <a class="nav-link text-white" aria-current="page" href="./index.html">Home </a>
+                        </li>
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link text-white" href="#">Features</a>
+                        </li>
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link text-white" href="#">Pages</a>
+                        </li>
+
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="section-banner section-bg mb-5">
+        <div class="container-fluid">
+            <div class="banner swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row row-cols-lg-2">
+                            <div>
+                                <h1 class="mt-lg-4 mb-lg-4">Superior sound, <br>Tangible quality</h1>
+                                <p class="mb-4">Sit back, relax and prepare to experience a new level of audio
+                                    excellence. These
+                                    headphones combine cutting-edge technology with the finest craftsmanship, for the
+                                    ultimate listening experience.</p>
+                                <button class="update-btn rounded-2">Google Play</button>
+                                <button class="update-btn rounded-2">App Store</button>
+                            </div>
+                            <div class="mt-4">
+                                <img src="./images/thumb-04.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="row row-cols-lg-2">
+                            <div>
+                                <h1 class="mt-lg-4 mb-lg-4">Get Prolend Product landing page</h1>
+                                <p class="mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                    architecto beatae vitae dicta sunt explicabo.</p>
+                                <button class="update-btn rounded-2">Get the App</button>
+                                <button class="update-btn rounded-2">Learn More</button>
+                            </div>
+                            <div class="mt-4">
+                                <img src="./images/welcome-mockup.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-4 mb-5">
+        <div class="text-center">
+            <button class="published-btn">E&D 360</button>
+            <button class="published-btn">Explore Mechanic</button>
+            <button class="published-btn">Explore Dealer</button>
+            <button class="published-btn">POS</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Icon Box -->
+                <div class="icon-box text-center p-3">
+                    <!-- Featured Icon -->
+                    <div class="featured-icon mb-3">
+
+                        <span class=""> <i class="fa-solid fa-hands-clapping fs-1 text-danger"></i></span>
+                    </div>
+                    <!-- Icon Text -->
+                    <div class="icon-text">
+                        <h3 class="mb-2">Touch to buy</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                            dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Icon Box -->
+                <div class="icon-box text-center p-3">
+                    <!-- Featured Icon -->
+                    <div class="featured-icon mb-3">
+                        <span class=""><i class="fa-solid fa-fingerprint fs-1 text-danger"></i></span>
+
+                    </div>
+                    <!-- Icon Text -->
+                    <div class="icon-text">
+                        <h3 class="mb-2">Secure Data</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                            dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Icon Box -->
+                <div class="icon-box text-center p-3">
+                    <!-- Featured Icon -->
+                    <div class="featured-icon mb-3">
+                        <span class=""><i class="fa-regular fa-message fs-1 text-danger"></i></span>
+                    </div>
+                    <!-- Icon Text -->
+                    <div class="icon-text">
+                        <h3 class="mb-2">Instant Chat</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                            dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Icon Box -->
+                <div class="icon-box text-center p-3">
+                    <!-- Featured Icon -->
+                    <div class="featured-icon mb-3">
+                        <span class=""><i class="fa-regular fa-bell fs-1 text-danger"></i></span>
+                    </div>
+                    <!-- Icon Text -->
+                    <div class="icon-text">
+                        <h3 class="mb-2">Live Notification</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                            dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Icon Box -->
+                <div class="icon-box text-center p-3">
+                    <!-- Featured Icon -->
+                    <div class="featured-icon mb-3">
+                        <span class=""><i class="fa-solid fa-wifi fs-1 text-danger"></i></span>
+                    </div>
+                    <!-- Icon Text -->
+                    <div class="icon-text">
+                        <h3 class="mb-2">Wifi Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                            dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Icon Box -->
+                <div class="icon-box text-center p-3">
+                    <!-- Featured Icon -->
+                    <div class="featured-icon mb-3">
+                        <span class=""><i class="fa-solid fa-boxes-stacked fs-1 text-danger"></i></span>
+                    </div>
+                    <!-- Icon Text -->
+                    <div class="icon-text">
+                        <h3 class="mb-2">App Watch</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                            dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 pt-5">
+        <div class="row row-cols-lg-2 pb-5">
+            <div class="ed-content">
+                <h2 class="pb-3">Home Page</h2>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Add Vehicle:</b> Enter basic vehicle
+                        details (VIN, make, model,
+                        registration, etc.) and associate the
+                        vehicle with a specific garage or
+                        service center
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Select Services:</b> Choose from various
+                        services like maintenance, repairs,
+                        inspections, etc., and schedule the
+                        preferred service date and time.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Confirm Service Details:</b> Review and
+                        confirm selected services, along with
+                        estimated costs, and proceed with
+                        payment</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Service History & Reminders:</b> Track
+                        the service history of the vehicle and
+                        set reminders for upcoming services
+                        or maintenance tasks</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Notifications:</b> Receive updates on
+                        service progres</p>
+                </div>
+
+
+                <button class="px-3 py-2 text-white border-0 mt-3 know-btn rounded-2">Know More</button>
+            </div>
+            <div class="ed-img">
+                <img src="./images/home-page-em.png" height="auto" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-lg-2 pb-5">
+
+            <div class="ed-img">
+                <img src="./images/wallet-em.png" height="auto" width="100%">
+            </div>
+            <div class="ed-content">
+                <h2 class="pb-3">Wallet Management</h2>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Unified Dashboard:</b> Users can view
+                        balances for Product Wallet, Service
+                        Wallet, and Total Wallet Balance.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Transaction History</b> Keep a detailed
+                        log of all payments made through the
+                        wallet, including time, location, and
+                        the type of transaction.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Transaction Search & Filter:</b> Provide
+                        users with search and filter options to
+                        quickly find past transactions (e.g., by
+                        date, merchant, or type of expense)</p>
+                </div>
+                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-lg-2 pb-5">
+
+
+            <div class="ed-content">
+                <h2 class="pb-3">Suppliers</h2>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Supplier Directory:</b> Maintain a
+                        centralized directory of all suppliers
+                        with detailed profiles, including
+                        contact information payment terms.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Supplier Categories:</b> Organize
+                        suppliers into categories like Parts
+                        Suppliers, Service Providers for easier
+                        management.
+                    </p>
+                </div>
+
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Supplier Overview Dashboard:</b> A
+                        central dashboard where users can
+                        view key metrics for all suppliers,
+                        including performance, open orders,
+                        inventory status, and financial details.</p>
+                </div>
+                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+            </div>
+            <div class="ed-img">
+                <img src="./images/suppliers-em.png" height="auto" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-lg-2 pb-5">
+            <div class="ed-img">
+                <img src="./images/refer-em.png" height="auto" width="100%">
+            </div>
+            <div class="ed-content">
+                <h2 class="pb-3">Refer & Earn</h2>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Unique Referral Code/Link:</b> Each user
+                        gets a personalized referral code or
+                        link to share.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Multi-Level Referral (Optional):</b> Users
+                        earn bonuses when their referrals
+                        invite others.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Easy Sharing Options:</b>Share referral
+                        links via WhatsApp, email, SMS, and
+                        social media</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Dual Rewards System:</b>Both the
+                        referrer and referee get benefits (e.g.,
+                        discounts, cash rewards, credits).</p>
+                </div>
+
+                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row row-cols-lg-2 pb-5">
+            <div class="ed-img">
+                <!-- <img src="./images/PS3.JPG" height="auto" width="100%"> -->
+            </div>
+            <div class="ed-content">
+                <h2 class="pb-3">E&D 360 Welcome</h2>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Unique Referral Code/Link:</b> Each user
+                        gets a personalized referral code or
+                        link to share.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Multi-Level Referral (Optional):</b> Users
+                        earn bonuses when their referrals
+                        invite others.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Easy Sharing Options:</b>Share referral
+                        links via WhatsApp, email, SMS, and
+                        social media</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Dual Rewards System:</b>Both the
+                        referrer and referee get benefits (e.g.,
+                        discounts, cash rewards, credits).</p>
+                </div>
+
+                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-lg-2 pb-5">
+
+
+            <div class="ed-content">
+                <h2 class="pb-3">E&D 360 Admin</h2>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Supplier Directory:</b> Maintain a
+                        centralized directory of all suppliers
+                        with detailed profiles, including
+                        contact information payment terms.
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Supplier Categories:</b> Organize
+                        suppliers into categories like Parts
+                        Suppliers, Service Providers for easier
+                        management.
+                    </p>
+                </div>
+
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                    <p><b>Supplier Overview Dashboard:</b> A
+                        central dashboard where users can
+                        view key metrics for all suppliers,
+                        including performance, open orders,
+                        inventory status, and financial details.</p>
+                </div>
+                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+            </div>
+            <div class="ed-img">
+                <!-- <img src="./images/PS2.JPG" height="auto" width="100%"> -->
+            </div>
+        </div>
+    </div>
+
+    
+
+   
+
+
+    <section class="section download-app">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-7">
+                    <div class="">
+                        <h1 class="text-white">Download our Apps</h1>
+                        <p class="text-white my-3 d-none d-lg-block">Prolend is available for all devices, consectetur
+                            adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod
+                            neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid
+                            deserunt, quis maiores nesciunt autem, aperiam natus.</p>
+                        <p class="text-white my-3 d-block d-lg-none">Prolend is available for all devices, consectetur
+                            adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id
+                            labore nisi quisquam.</p>
+                        <div class="d-flex">
+                            <button class="update-btn rounded-5">Get the App</button>
+                            <button class="update-btn rounded-5">Learn More</button>
+                        </div>
+                        <span class="text-white fw-3">* Available on iPhone, iPad and
+                            all Android devices</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="">
+                        <img src="./images/download-thumb2.png" height="auto" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container d-lg-flex align-items-center justify-content-center mt-5 mb-3">
+        <div class="rounded-2 p-3 shadow-lg">
+            <h2 class="text-center pt-2 fw-bold fw-semibold mb-4">Get In Touch</h2>
+            <form>
+                <div class="d-lg-flex">
+                    <div class="">
+                        <div class="mx-3">
+                            <input type="text" class="form-control" id="firstName" placeholder="Name">
+                        </div>
+                        <div class="mx-3 my-3">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="mx-3 my-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="">
+                        <textarea class="form-control" placeholder="Message" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="update-btn rounded-2">Send Message</button>
+    </div>
+
+
+
+    <div class="box15-footer mt-5 pt-5 bg-black">
+        <div class="container pt-5 text-white">
+            <div class="row row-cols-lg-4 pb-5">
+                <div>
+                    <img src="./images/logo-white.png" class="img-fluid" alt="ABC Book Logo">
+                    <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit laboriosam vitae.</p>
+                    <div class="d-flex text-white">
+                        <div class="icon1 center-div text-white">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="icon1 center-div text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="icon1 center-div text-white">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="icon1 center-div text-white">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ps-lg-5">
+                    <h5 class="fw-bold pb-3">Company</h5>
+                    <p>About Us</p>
+                    <p>Our Services</p>
+                    <p>Career</p>
+                    <p>Read our Blog</p>
+                </div>
+
+                <div class="ps-lg-5">
+                    <h5 class="fw-bold pb-3">Support</h5>
+                    <p>Legal Information</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Report Abuse</p>
+                </div>
+
+                <div>
+                    <h5 class="fw-bold pb-3">Get In touch</h5>
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>FAQs</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+
+            <div class="copyright mt-5 mb-0">
+                <p>Copyright ©2024 All rights reserved | This template is made with by Colorlib</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const banner = new Swiper('.banner', {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            spaceBetween: 35,
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+
+        });
+    </script>
+
+    <script>
+        const product = new Swiper('.product', {
+            spaceBetween: 30,
+            slidesPerView: 5,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+
+                750: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+
+                950: {
+                    slidesPerView: 5,
+                    spaceBetween: 30
+                }
+            }
+        });      
+    </script>
+
+</body>
+
+</html>

@@ -23,10 +23,13 @@
             color: white;
             place-items: center;
         }
-#eandD360{
-    display: inline;
-}
-        #exploreMechanic,#exploreDealer{
+
+        #eandD360 {
+            display: inline;
+        }
+
+        #exploreMechanic,
+        #exploreDealer {
             display: none;
             /* background-color: blue; */
         }
@@ -76,8 +79,7 @@
                     <div class="swiper-slide">
                         <div class="row row-cols-lg-2 back-img">
                             <div class="ps-4 text-white">
-                                
-                                <!-- <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 68, 149, 1)" offset="0%"></stop><stop stop-color="rgba(255, 109, 109, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,343L120,285.8C240,229,480,114,720,81.7C960,49,1200,98,1440,98C1680,98,1920,49,2160,24.5C2400,0,2640,0,2880,65.3C3120,131,3360,261,3600,310.3C3840,359,4080,327,4320,310.3C4560,294,4800,294,5040,277.7C5280,261,5520,229,5760,236.8C6000,245,6240,294,6480,334.8C6720,376,6960,408,7200,359.3C7440,310,7680,180,7920,147C8160,114,8400,180,8640,179.7C8880,180,9120,114,9360,73.5C9600,33,9840,16,10080,16.3C10320,16,10560,33,10800,65.3C11040,98,11280,147,11520,163.3C11760,180,12000,163,12240,155.2C12480,147,12720,147,12960,163.3C13200,180,13440,212,13680,236.8C13920,261,14160,278,14400,294C14640,310,14880,327,15120,277.7C15360,229,15600,114,15840,73.5C16080,33,16320,65,16560,138.8C16800,212,17040,327,17160,383.8L17280,441L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"></path></svg> -->
+
                                 <h1 class="mt-lg-4 mb-lg-4">Superior sound, <br>Tangible quality</h1>
                                 <p class="mb-4">Sit back, relax and prepare to experience a new level of audio
                                     excellence. These
@@ -86,7 +88,7 @@
                                 <button class="update-btn rounded-2">Google Play</button>
                                 <button class="update-btn rounded-2">App Store</button>
                             </div>
-                            <div class="mt-4">
+                            <div class="mt-4 ms-0 me-0">
                                 <img src="./images/thumb-04.png">
                             </div>
                         </div>
@@ -103,7 +105,7 @@
                                 <button class="update-btn rounded-2">Get the App</button>
                                 <button class="update-btn rounded-2">Learn More</button>
                             </div>
-                            <div class="pt-5">
+                            <div class="pt-5 ms-0 me-0">
                                 <img src="./images/welcome-mockup.png">
                             </div>
                         </div>
@@ -116,8 +118,9 @@
     <div class="container mt-4 mb-5">
         <div class="text-center">
             <a href="#eandD360"><button class="published-btn" onclick="myfunction()">E&D 360</button></a>
-           <!-- <button class="published-btn" onclick="myfunction()">E&D 360</button> -->
-            <a href="#exploreMechanic"><button class="published-btn" onclick="myfunction1()">Explore Mechanic</button></a>
+            <!-- <button class="published-btn" onclick="myfunction()">E&D 360</button> -->
+            <a href="#exploreMechanic"><button class="published-btn" onclick="myfunction1()">Explore
+                    Mechanic</button></a>
             <!-- <button class="published-btn" onclick="myfunction1()">Explore Mechanic</button> -->
             <a href="#exploreDealer"><button class="published-btn" onclick="myfunction2()">Explore Dealer</button></a>
             <!-- <button class="published-btn">Explore Dealer</button>  -->
@@ -205,500 +208,896 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <div class="rounded-5 double-btn">
+            <div class="p-2">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked 
+                onchange="getEandD360View(event);">
+                <label class="btn btn-outline-success rounded-5" for="success-outlined">Mobile</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off"
+                 onchange="getEandD360View(event);">
+                <label class="btn btn-outline-danger rounded-5" for="danger-outlined">Desktop</label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getEandD360View(event) {
+            alert(event.target.value);
+            console.log(event.target);
+
+        }
+    </script>
+
+    <section id="eandD360">
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">E&D 360 Welcome</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Unique Referral Code/Link:</b> Each user
+                            gets a personalized referral code or
+                            link to share.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Multi-Level Referral (Optional):</b> Users
+                            earn bonuses when their referrals
+                            invite others.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Easy Sharing Options:</b>Share referral
+                            links via WhatsApp, email, SMS, and
+                            social media</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Dual Rewards System:</b>Both the
+                            referrer and referee get benefits (e.g.,
+                            discounts, cash rewards, credits).</p>
+                    </div>
+
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/Home page 360.png" height="auto" width="100%">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+                <div class="ed-img">
+                    <img src="./images/admin page 360.png" height="auto" width="100%">
+                </div>
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">E&D 360 Admin</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">E&D 360 Chat</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/Chats 360.png" height="auto" width="100%">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+                <div class="ed-img">
+                    <img src="./images/Task 360.png" height="auto" width="100%">
+                </div>
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">E&D 360 Task</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="eandD360Web">
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content">
+                    <h2 class="pb-3">E&D 360 Dashboard</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p>Stay organized and boost productivity with a smart task management system that keeps everyone
+                            aligned. Assign, track, and prioritize tasks effortlessly across teams. With real-time
+                            updates, attachments, and status controls, you stay in control from start to finish. Get
+                            more done—faster and smarter.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Task Management:</b> Assign, monitor, and report tasks effortlessly — organized by
+                            department, team, or priority.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>CRM & Client Handling:</b> Track leads, schedule meetings, and manage client relationships
+                            from one easy dashboard. </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Payroll Management:</b> Automate salary processing with attendance data — accurate, quick,
+                            and hassle-free.</p>
+                    </div>
+
+                    <!-- <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button> -->
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/WEB 2 E&D360.png" height="auto" width="100%">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-img pt-5 mt-5">
+                    <img src="./images/WEB 1 E&D360.png" height="auto" width="100%">
+                </div>
+
+                <div class="ed-content">
+                    <h2 class="pb-2">E&D 360 Attendence</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>E&D 360 </b>is an all-in-one web-based solution designed to streamline employee operations
+                            and boost workplace efficiency. It empowers managers and employees through a user-friendly
+                            interface packed with essential features for day-to-day management.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Core Features:</h5>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Employee Login System:</b> Secure, role-based login for admins, managers, and employees.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Attendance Management:</b> Real-time tracking of check-ins and check-outs, with automated
+                            reports and summaries.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Break-In/Break-Out Logging:</b> Employees can record their break times, giving managers
+                            insights into time utilization.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Task Assignment & Tracking:</b> Create, assign, and monitor tasks for individuals or teams
+                            with deadlines and priority levels.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Reminders & Notifications:</b> Built-in system for automated reminders about tasks,
+                            meetings, deadlines, or attendance anomalies.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Leave Management:</b> Employees can request leave; managers can approve/reject with leave
+                            balance tracking.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Employee Profiles & Data:</b> Centralized records including contact info, job role,
+                            documents, and performance data.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Performance Dashboard:</b> Visual analytics to evaluate productivity, task completion, and
+                            attendance trends.</p>
+                    </div>
+
+                    <!-- <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button> -->
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content">
+                    <h2 class="pb-3">E&D 360 Dashboard</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Internal Chat & Reminders:</b> Empower seamless communication with built-in chat, group
+                            messaging, reminders, and file sharing.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Letter & Document Generator:</b> Generate official letters (leaves, permissions, exit)
+                            with ease, and keep the process paperless.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Smart Dashboards:</b> Visualize everything — from task completion rates to attendance
+                            graphs and chat request analytics.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Employee Management (HRMS)</b>From onboarding to exit, manage your workforce with powerful
+                            attendance, leave, and performance tracking. Easily handle employee records, documents, and
+                            role assignments in one centralized system. Gain real-time insights into workforce
+                            productivity and streamline HR operations with automated workflows.</p>
+                    </div>
+
+                    <!-- <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button> -->
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/WEB 3 E&D360.png" height="auto" width="100%">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-img">
+                    <img src="./images/WEB 4 E&D360.png" height="auto" width="100%">
+                </div>
+
+                <div class="ed-content">
+                    <h2 class="pb-3">E&D 360 Chats</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Internal Chat & Reminders:</b> Empower seamless communication with built-in chat, group
+                            messaging, reminders, and file sharing.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Letter & Document Generator:</b> Generate official letters (leaves, permissions, exit)
+                            with ease, and keep the process paperless.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Smart Dashboards:</b> Visualize everything — from task completion rates to attendance
+                            graphs and chat request analytics.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Employee Management (HRMS)</b>From onboarding to exit, manage your workforce with powerful
+                            attendance, leave, and performance tracking. Easily handle employee records, documents, and
+                            role assignments in one centralized system. Gain real-time insights into workforce
+                            productivity and streamline HR operations with automated workflows.</p>
+                    </div>
+
+                    <!-- <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button> -->
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
     <section id="exploreMechanic">
-    <div class="container mt-5 pt-5" >
-        <div class="row row-cols-lg-2 pb-5">
-            <div class="ed-content mt-5 pt-5">
-                <h2 class="pb-3">Home Page</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Add Vehicle:</b> Enter basic vehicle
-                        details (VIN, make, model,
-                        registration, etc.) and associate the
-                        vehicle with a specific garage or
-                        service center
-                    </p>
+        <div class="container mt-5 pt-5">
+            <div class="row row-cols-lg-2 pb-5">
+                <div class="ed-content mt-5 pt-5">
+                    <h2 class="pb-3">Home Page</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Add Vehicle:</b> Enter basic vehicle
+                            details (VIN, make, model,
+                            registration, etc.) and associate the
+                            vehicle with a specific garage or
+                            service center
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Select Services:</b> Choose from various
+                            services like maintenance, repairs,
+                            inspections, etc., and schedule the
+                            preferred service date and time.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Confirm Service Details:</b> Review and
+                            confirm selected services, along with
+                            estimated costs, and proceed with
+                            payment</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Service History & Reminders:</b> Track
+                            the service history of the vehicle and
+                            set reminders for upcoming services
+                            or maintenance tasks</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Notifications:</b> Receive updates on
+                            service progres</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 mt-3 know-btn rounded-2">Know More</button>
                 </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Select Services:</b> Choose from various
-                        services like maintenance, repairs,
-                        inspections, etc., and schedule the
-                        preferred service date and time.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Confirm Service Details:</b> Review and
-                        confirm selected services, along with
-                        estimated costs, and proceed with
-                        payment</p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Service History & Reminders:</b> Track
-                        the service history of the vehicle and
-                        set reminders for upcoming services
-                        or maintenance tasks</p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Notifications:</b> Receive updates on
-                        service progres</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 mt-3 know-btn rounded-2">Know More</button>
-            </div>
 
-            <div class="ed-img">
-                <img src="./images/AA-Picsart-AiImageEnhancer.png" height="auto" width="100%">
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-
-            <div class="ed-img">
-                <img src="./images/wallet-Picsart-AiImageEnhancer.png" height="auto" width="100%">
-            </div>
-            <div class="ed-content mt-5 pt-5">
-                <h2 class="pb-3">Wallet Management</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Unified Dashboard:</b> Users can view
-                        balances for Product Wallet, Service
-                        Wallet, and Total Wallet Balance.
-                    </p>
+                <div class="ed-img">
+                    <img src="./images/AA-Picsart-AiImageEnhancer.png" height="auto" width="100%">
                 </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Transaction History</b> Keep a detailed
-                        log of all payments made through the
-                        wallet, including time, location, and
-                        the type of transaction.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Transaction Search & Filter:</b> Provide
-                        users with search and filter options to
-                        quickly find past transactions (e.g., by
-                        date, merchant, or type of expense)</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
 
-
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">Suppliers</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
+                <div class="ed-img">
+                    <img src="./images/wallet-Picsart-AiImageEnhancer.png" height="auto" width="100%">
                 </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
+                <div class="ed-content mt-5 pt-5">
+                    <h2 class="pb-3">Wallet Management</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Unified Dashboard:</b> Users can view
+                            balances for Product Wallet, Service
+                            Wallet, and Total Wallet Balance.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Transaction History</b> Keep a detailed
+                            log of all payments made through the
+                            wallet, including time, location, and
+                            the type of transaction.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Transaction Search & Filter:</b> Provide
+                            users with search and filter options to
+                            quickly find past transactions (e.g., by
+                            date, merchant, or type of expense)</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
                 </div>
-
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
-            </div>
-            <div class="ed-img">
-                <img src="./images/History-Picsart-AiImageEnhancer.png" height="auto" width="100%">
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-            <div class="ed-img">
-                <img src="./images/bill-Picsart-AiImageEnhancer.png" height="auto" width="100%">
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">Suppliers</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+                <div class="ed-img">
+                    <img src="./images/History-Picsart-AiImageEnhancer.png" height="auto" width="100%">
+                </div>
             </div>
-            <div class="ed-content mt-5 pt-5">
-                <h2 class="pb-3">Refer & Earn</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Unique Referral Code/Link:</b> Each user
-                        gets a personalized referral code or
-                        link to share.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Multi-Level Referral (Optional):</b> Users
-                        earn bonuses when their referrals
-                        invite others.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Easy Sharing Options:</b>Share referral
-                        links via WhatsApp, email, SMS, and
-                        social media</p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Dual Rewards System:</b>Both the
-                        referrer and referee get benefits (e.g.,
-                        discounts, cash rewards, credits).</p>
-                </div>
-
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
-            </div>
-
         </div>
-    </div>
 
-</section>
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+                <div class="ed-img">
+                    <img src="./images/bill-Picsart-AiImageEnhancer.png" height="auto" width="100%">
+                </div>
+                <div class="ed-content mt-5 pt-5">
+                    <h2 class="pb-3">Refer & Earn</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Unique Referral Code/Link:</b> Each user
+                            gets a personalized referral code or
+                            link to share.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Multi-Level Referral (Optional):</b> Users
+                            earn bonuses when their referrals
+                            invite others.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Easy Sharing Options:</b>Share referral
+                            links via WhatsApp, email, SMS, and
+                            social media</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Dual Rewards System:</b>Both the
+                            referrer and referee get benefits (e.g.,
+                            discounts, cash rewards, credits).</p>
+                    </div>
 
-<section id="eandD360">
-    <div class="container" >
-        <div class="row row-cols-lg-2 pb-5">
-            
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">E&D 360 Welcome</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Unique Referral Code/Link:</b> Each user
-                        gets a personalized referral code or
-                        link to share.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Multi-Level Referral (Optional):</b> Users
-                        earn bonuses when their referrals
-                        invite others.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Easy Sharing Options:</b>Share referral
-                        links via WhatsApp, email, SMS, and
-                        social media</p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Dual Rewards System:</b>Both the
-                        referrer and referee get benefits (e.g.,
-                        discounts, cash rewards, credits).</p>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
                 </div>
 
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
             </div>
-
-            <div class="ed-img">
-                <img src="./images/Home page 360.png" height="auto" width="100%">
-            </div>
-
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-            <div class="ed-img">
-                <img src="./images/admin page 360.png" height="auto" width="100%">
+    </section>
+
+    <section class="exploreMechanicWeb">
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content">
+                    <h2 class="pb-3">EM Dashboard</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p>Explore Mechanic Web is a smart, browser-based solution for managing all aspects of
+                            automotive maintenance and services.Designed for convenience and efficiency, it allows car
+                            owners to keep track of their vehicle’s service schedules, receive automated SMS reminders,
+                            and manage payments through a built-in wallet feature.The platform stores a complete service
+                            history for each vehicle, enabling users to monitor past work and ongoing maintenance
+                            activities in one place. Additionally, Explore Mechanic Web provides live updates on
+                            available products, services, and offers, ensuring that customers stay informed and never
+                            miss an important update.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Description:</b>This section allows users to track current and active service requests.
+                            Whether a vehicle is in the workshop or awaiting pickup, customers get live updates on the
+                            status of their orders.
+                        </p>
+                    </div>
+                    <h5 class="fw-bold">Key Features:</h5>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p>Real-time updates on service progress (inspection, repair, testing).</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p>Order details including assigned technician, estimated cost, and timeline.</p>
+                    </div>
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/EM Web 1.png" height="auto" width="100%">
+                </div>
+
             </div>
-
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">E&D 360 Admin</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
-                </div>
-
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
-            </div>
-            
         </div>
-    </div>
 
-      <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-           
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">E&D 360 Chat</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-img">
+                    <img src="./images/EM Web 2.png" height="auto" width="100%">
                 </div>
 
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
+                <div class="ed-content">
+                    <h2 class="pb-3">EM Services</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Description:</b> This section gives customers real-time visibility into current car
+                            service orders and ongoing work status.
+                        </p>
+                    </div>
+                    <h5 class="fw-bold">Key Features:</h5>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Live Service Status:</b> View spare parts, oils, tires, and accessories with images and
+                            specs.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Live Service Status:</b> Track job progress (Received → In Service → Completed).</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Live Bill Estimation:</b> Real-time product pricing, discounts, and stock levels.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Technician Assignment:</b> Estimated time to complete each listed service.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Book Services Online:</b> Instant booking via the dashboard.</p>
+                    </div>
                 </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+
+
+
             </div>
-
-             <div class="ed-img">
-                <img src="./images/Chats 360.png" height="auto" width="100%">
-            </div>
-
-            
         </div>
-    </div>
 
-      <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-            <div class="ed-img">
-                <img src="./images/Task 360.png" height="auto" width="100%">
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+
+
+                <div class="ed-content">
+                    <h2 class="pb-3">EM Products</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Description:</b> Customers can browse, search, and get details about automotive products
+                            such as spare parts, accessories, or oils directly from the platform.
+                        </p>
+                    </div>
+                    <h5 class="fw-bold">Key Features:</h5>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Product Listings:</b> View spare parts, oils, tires, and accessories with images and
+                            specs.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Service Menu:</b> Detailed descriptions of services like wheel alignment, oil change,
+                            diagnostics.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Pricing & Availability:</b> Real-time product pricing, discounts, and stock levels.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Service Duration Info:</b> Estimated time to complete each listed service.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Book Services Online:</b> Instant booking via the dashboard.</p>
+                    </div>
+                </div>
+                <div class="ed-img">
+                    <img src="./images/EM Web 3.png" height="auto" width="100%">
+                </div>
+
             </div>
-
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">E&D 360 Task</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
-                </div>
-
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
-            </div>
-            
         </div>
-    </div>
-</section>
 
-<section id="exploreDealer">
-    <div class="container" >
-        <div class="row row-cols-lg-2 pb-5">
-            
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">Explore Dealer Welcome</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Unique Referral Code/Link:</b> Each user
-                        gets a personalized referral code or
-                        link to share.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Multi-Level Referral (Optional):</b> Users
-                        earn bonuses when their referrals
-                        invite others.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Easy Sharing Options:</b>Share referral
-                        links via WhatsApp, email, SMS, and
-                        social media</p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Dual Rewards System:</b>Both the
-                        referrer and referee get benefits (e.g.,
-                        discounts, cash rewards, credits).</p>
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-img">
+                    <img src="./images/EM Web 2.png" height="auto" width="100%">
                 </div>
 
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                <div class="ed-content">
+                    <h2 class="pb-3">EM Suppliers</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Description:</b> Manage payments, wallet balance, suppliers, and financial records in this
+                            section.
+                        </p>
+                    </div>
+                    <h5 class="fw-bold">Key Features:</h5>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Wallet Management:</b> Prepaid credit balance, transaction logs, and top-up options.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Bill Payment Tracking:</b> View unpaid bills, payment status, and due dates.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Invoice Generation:</b> Auto-generate digital invoices linked to services.</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Details:</b> View approved supplier profiles, contact info, and products offered.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Financial Reports:</b> Monthly spending summaries and downloadable statements.</p>
+                    </div>
+                </div>
+
+
+
             </div>
-
-            <div class="ed-img">
-                <img src="./images/Home page dealer (1).png" height="auto" width="100%">
-            </div>
-
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-            <div class="ed-img">
-                <img src="./images/Wallet delaer.png" height="auto" width="100%">
+
+
+    </section>
+
+    <section id="exploreDealer">
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">Explore Dealer Welcome</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Unique Referral Code/Link:</b> Each user
+                            gets a personalized referral code or
+                            link to share.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Multi-Level Referral (Optional):</b> Users
+                            earn bonuses when their referrals
+                            invite others.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Easy Sharing Options:</b>Share referral
+                            links via WhatsApp, email, SMS, and
+                            social media</p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Dual Rewards System:</b>Both the
+                            referrer and referee get benefits (e.g.,
+                            discounts, cash rewards, credits).</p>
+                    </div>
+
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/Home page dealer (1).png" height="auto" width="100%">
+                </div>
+
             </div>
-
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">Explore Dealer Wallet</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
-                </div>
-
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
-            </div>
-            
         </div>
-    </div>
 
-      <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-           
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">Explore Dealer Vehicles</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+                <div class="ed-img">
+                    <img src="./images/Wallet delaer.png" height="auto" width="100%">
                 </div>
 
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">Explore Dealer Wallet</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
                 </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+
             </div>
-
-             <div class="ed-img">
-                <img src="./images/Vehicles dealer.png" height="auto" width="100%">
-            </div>
-
-            
         </div>
-    </div>
 
-      <div class="container">
-        <div class="row row-cols-lg-2 pb-5">
-            <div class="ed-img">
-                <img src="./images/Side panel dealer.png" height="auto" width="100%">
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">Explore Dealer Vehicles</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+                <div class="ed-img">
+                    <img src="./images/Vehicles dealer.png" height="auto" width="100%">
+                </div>
+
             </div>
-
-            <div class="ed-content pt-5 mt-5">
-                <h2 class="pb-3">Explore Dealer Task</h2>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Directory:</b> Maintain a
-                        centralized directory of all suppliers
-                        with detailed profiles, including
-                        contact information payment terms.
-                    </p>
-                </div>
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Categories:</b> Organize
-                        suppliers into categories like Parts
-                        Suppliers, Service Providers for easier
-                        management.
-                    </p>
-                </div>
-
-                <div class="d-lg-flex">
-                    <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
-                    <p><b>Supplier Overview Dashboard:</b> A
-                        central dashboard where users can
-                        view key metrics for all suppliers,
-                        including performance, open orders,
-                        inventory status, and financial details.</p>
-                </div>
-                <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
-            </div>
-            
         </div>
-    </div>
-</section>
-    
 
-   
+        <div class="container">
+            <div class="row row-cols-lg-2 pb-5">
+                <div class="ed-img">
+                    <img src="./images/Side panel dealer.png" height="auto" width="100%">
+                </div>
+
+                <div class="ed-content pt-5 mt-5">
+                    <h2 class="pb-3">Explore Dealer Task</h2>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Directory:</b> Maintain a
+                            centralized directory of all suppliers
+                            with detailed profiles, including
+                            contact information payment terms.
+                        </p>
+                    </div>
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Categories:</b> Organize
+                            suppliers into categories like Parts
+                            Suppliers, Service Providers for easier
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="d-lg-flex">
+                        <i class="fa fa-circle-check pt-1 pe-2 text-danger"></i>
+                        <p><b>Supplier Overview Dashboard:</b> A
+                            central dashboard where users can
+                            view key metrics for all suppliers,
+                            including performance, open orders,
+                            inventory status, and financial details.</p>
+                    </div>
+                    <button class="px-3 py-2 text-white border-0 know-btn mt-3 rounded-2">Know More</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <section class="section download-app">
@@ -761,8 +1160,6 @@
         <button class="update-btn rounded-2">Send Message</button>
     </div>
 
-
-
     <div class="box15-footer mt-5 pt-5 bg-black">
         <div class="container pt-5 text-white">
             <div class="row row-cols-lg-4 pb-5">
@@ -818,7 +1215,7 @@
 
     <script>
         const banner = new Swiper('.banner', {
-            effect: 'fade',
+            // effect: 'fade',
             fadeEffect: {
                 crossFade: true
             },
@@ -870,37 +1267,34 @@
         });      
     </script>
 
-
-   <script>
-       function myfunction(){
-         document.getElementById("eandD360").style.display = "block";
-        document.getElementById("exploreMechanic").style.display = "none";
-        document.getElementById("exploreDealer").style.display = "none";
-       }
-    </script>
-
-
     <script>
-       function myfunction1(){
-        // alert("hii");
-        document.getElementById("exploreMechanic").style.display = "block";
-        document.getElementById("eandD360").style.display = "none";
-         document.getElementById("exploreDealer").style.display = "none";
-       }
+        function myfunction() {
+            document.getElementById("eandD360").style.display = "block";
+            document.getElementById("exploreMechanic").style.display = "none";
+            document.getElementById("exploreDealer").style.display = "none";
+        }
     </script>
 
     <script>
-       function myfunction2(){
-       
-        document.getElementById("exploreDealer").style.display = "block";
-        document.getElementById("eandD360").style.display = "none";
-         document.getElementById("exploreMechanic").style.display = "none";
-       }
+        function myfunction1() {
+            // alert("hii");
+            document.getElementById("exploreMechanic").style.display = "block";
+            document.getElementById("eandD360").style.display = "none";
+            document.getElementById("exploreDealer").style.display = "none";
+        }
     </script>
 
-     
+    <script>
+        function myfunction2() {
 
-    
+            document.getElementById("exploreDealer").style.display = "block";
+            document.getElementById("eandD360").style.display = "none";
+            document.getElementById("exploreMechanic").style.display = "none";
+        }
+    </script>
+
+
+
 
 </body>
 
